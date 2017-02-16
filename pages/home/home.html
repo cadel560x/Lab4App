@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  The world is your oyster.
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+  </p>
+  <p>My name is {{name}}</p>
+  <h2 [innerHTML]="propBind"></h2>
+  <p align={{alignment}}>My age is 21</p>
+  <button (click)="clicked()">Click here!</button>
+  <h2>Time travel</h2>
+  <h3>The current year is {{currentYear}}</h3>
+  <button (click)="timeTravel()">Click here to time travel</button>
+  <h3>You have travelled to the year {{newYear}}</h3>
+  <input [(ngModel)]="twoWayBinding"><br>
+  <input [(ngModel)]="twoWayBinding">
+  <h1>BMI Calculator</h1>
+  <label for="weight">Weight</label>
+  <input id="weight" [(ngModel)]="weight">
+  <label for="height">Height</label>
+  <input id="height" [(ngModel)]="height">
+  <p>My BMI is <em>{{weight/(height*height)}}</em></p>
+</ion-content>
